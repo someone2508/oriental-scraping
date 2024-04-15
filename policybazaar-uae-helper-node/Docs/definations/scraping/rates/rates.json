@@ -1,0 +1,105 @@
+{
+    "general": {
+        "type": "object",
+        "properties": {
+            "insurerId": {
+                "type": "number",
+                "enum": [
+                    10
+                ]
+            }
+        },
+        "required": [
+            "insurerId"
+        ],
+        "additionalProperties": true
+    },
+    "insurer": {
+        "10":  {
+            "type": "object",
+            "properties": {
+                "policyType": {
+                    "type": "number",
+                    "enum": [
+                        1,
+                        2
+                    ]
+                },
+                "make": {
+                    "type": "number"
+                },
+                "model": {
+                    "type": "number"
+                },
+                "modelYear": {
+                    "type": "number"
+                },
+                "sumAssured": {
+                    "type": "number"
+                },
+                "insuredName": {
+                    "type": "string"
+                },
+                "dob": {
+                    "type": "string",
+                    "format": "dd/mm/yyyy"
+                },
+                "dlIssueDate": {
+                    "type": "string",
+                    "format": "dd/mm/yyyy"
+                },
+                "nationality": {
+                    "type": "number"
+                },
+                "location": {
+                    "type": "number"
+                },
+                "vehicleType": {
+                    "type": "string",
+                    "enum": [
+                        "N",
+                        "O"
+                    ]
+                },
+                "registrationDate": {
+                    "type": "string",
+                    "format": "dd/mm/yyyy"
+                },
+                "noClaimYear": {
+                    "type": "number",
+                    "enum": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                },
+                "insurerId": {
+                    "type": "number",
+                    "enum": [
+                        10
+                    ]
+                }
+            },
+            "required": [
+                "policyType",
+                "make",
+                "model",
+                "modelYear",
+                "sumAssured",
+                "insuredName",
+                "dob",
+                "dlIssueDate",
+                "nationality",
+                "location",
+                "vehicleType",
+                "registrationDate",
+                "noClaimYear",
+                "insurerId"
+            ],
+            "additionalProperties": false
+        }
+    }
+}
